@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма отправки</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <form id="firstForm" action="#">
+        <h1>КБ Random Coffee</h1>
+        <input id="name" type="text" name="name" placeholder="Имя">
+        <input id="username" type="text" name="name" placeholder="Telegram">
+
+        <input id="department" type="text" list="departments" name="department" placeholder="Подразделение">
+
+        <datalist id="departments">
+            <option value="КБ">
+            <option value="СА">
+            <option value="Институт">
+        </datalist>
+        <input id="email" type="email" name="email" placeholder="Email">
+        <span id="emailError" class="error-message" style="display: none;">Введите вашу корпоративную почту</span>
+        <input id="send_code" class="button-send-code" type="button" value="Продолжить" >
+    </form>
+
+    <form id="secondForm" action="#" style="display: none;">
+        <h1>КБ Random Coffee</h1>
+        <p class="description">На ваш почтовый ящик был отправлен код подтверждения</p>
+        <label>
+            <input type="text" id="input_code" name="confirmation_code" placeholder="Код подтверждения">
+        </label>
+
+        <button id="resend_code" class="button-send-code" style="border: none; font-size: 70%; color: #808080; background: none;">Отправить код еще раз</button>
+        <span id="timer" class="timer" style="margin-left: 5px; font-size: 70%; color: #808080;"></span>
+        <input type="button" id="check_code" value="Отправить">
+    </form>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+</body>
+</html>
