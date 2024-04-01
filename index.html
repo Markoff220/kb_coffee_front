@@ -12,19 +12,25 @@
 </head>
 <body>
     <form id="firstForm" action="#">
-        <h1>Strelka Random Coffee</h1>
+        <h1>КБ Random Coffee</h1>
         <input id="name" type="text" name="name" placeholder="Имя">
+        <span id="nameError" class="error-message" style="display: none;">Необходимо указать имя</span>
+
         <input id="username" type="text" name="name" placeholder="Telegram">
+        <span id="usernameError" class="error-message" style="display: none;">Необходимо указать никнейм в телеграмм, если его нет - укажите номер телефона</span>
 
         <input id="department" type="text" list="departments" name="department" placeholder="Подразделение">
+        <span id="departmentError" class="error-message" style="display: none;">Необходимо указать подразделение</span>
 
         <datalist id="departments">
             <option value="КБ">
             <option value="СА">
             <option value="Институт">
         </datalist>
+
         <input id="email" type="email" name="email" placeholder="Email">
         <span id="emailError" class="error-message" style="display: none;">Введите вашу корпоративную почту</span>
+
         <input id="send_code" class="button-send-code" type="button" value="Продолжить" >
     </form>
 </body>
