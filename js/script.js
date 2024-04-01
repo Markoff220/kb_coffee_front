@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 'department': document.getElementById('department').value,
                 "email": document.getElementById('email').value,
             };
-            alert('eee');
             tg.sendData(JSON.stringify(data));
         }
     });
