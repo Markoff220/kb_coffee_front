@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 if (atIndex !== -1) {
                     var domain = value.slice(atIndex + 1);
-                    if (!domain.includes('strelka')) {
+                    if ((!domain.includes('strelka') || domain.includes('architectsrussia'))) {
                         errorElement.style.display = 'block';
                         errStatus = 1;
                         return; // Прерываем выполнение текущей итерации
